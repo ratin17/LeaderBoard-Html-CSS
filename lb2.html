@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Leaderboard | ratin.cse@gmail.com </title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f2f2f2;
+    }
+    .leaderboard {
+        width: 300px;
+        margin: 50px auto;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+    }
+    .leaderboard h1 {
+        text-align: center;
+        font-size: 24px;
+        color: #333;
+        padding: 20px 0;
+        margin: 0;
+        background-color: #f1f1f1;
+    }
+    .leaderboard ol {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    .leaderboard li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 20px;
+        border-bottom: 1px solid #e0e0e0;
+        transition: background-color 0.3s ease;
+    }
+    .leaderboard li:hover {
+        background-color: #f9f9f9;
+    }
+    .leaderboard li:nth-child(even) {
+        background-color: #fafafa;
+    }
+    .leaderboard li span {
+        font-weight: bold;
+    }
+    .leaderboard li:hover span {
+        color: #007bff;
+    }
+    .leaderboard li .name {
+        flex-grow: 1;
+    }
+    .leaderboard li .score {
+        font-size: 18px;
+        color: #888;
+    }
+    .leaderboard li .position {
+        margin-right: 10px;
+        font-size: 18px;
+        color: #888;
+    }
+    .leaderboard li .avatar {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-right: 10px;
+    }
+    .leaderboard li .avatar img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    @keyframes fadeIn {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+    }
+    .leaderboard li:nth-child(1) {
+        animation: fadeIn 0.5s 0.3s both;
+    }
+    .leaderboard li:nth-child(2) {
+        animation: fadeIn 0.5s 0.5s both;
+    }
+    .leaderboard li:nth-child(3) {
+        animation: fadeIn 0.5s 0.7s both;
+    }
+    .leaderboard li:nth-child(4) {
+        animation: fadeIn 0.5s 0.9s both;
+    }
+    .leaderboard li:nth-child(5) {
+        animation: fadeIn 0.5s 1.1s both;
+    }
+</style>
+</head>
+<body>
+
+<div class="leaderboard">
+    <h1>Leaderboard</h1>
+    <ol>
+        <li>
+            <span class="position">1.</span>
+            <div class="avatar"><img src="img1.jpg" alt="Avatar"></div>
+            <span class="name">Player 1</span>
+            <span class="score">1000</span>
+        </li>
+        <li>
+            <span class="position">2.</span>
+            <div class="avatar"><img src="img2.jpg" alt="Avatar"></div>
+            <span class="name">Player 2</span>
+            <span class="score">950</span>
+        </li>
+        <li>
+            <span class="position">3.</span>
+            <div class="avatar"><img src="img3.jpg" alt="Avatar"></div>
+            <span class="name">Player 3</span>
+            <span class="score">900</span>
+        </li>
+        <li>
+            <span class="position">4.</span>
+            <div class="avatar"><img src="img4.jpg" alt="Avatar"></div>
+            <span class="name">Player 4</span>
+            <span class="score">850</span>
+        </li>
+        <li>
+            <span class="position">5.</span>
+            <div class="avatar"><img src="img5.jpg" alt="Avatar"></div>
+            <span class="name">Player 5</span>
+            <span class="score">800</span>
+        </li>
+        
+    </ol>
+</div>
+
+</body>
+</html>
